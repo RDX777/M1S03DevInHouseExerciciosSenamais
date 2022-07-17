@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            word-wrap:break-word;
+            width: 100%; 
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+
+        <h1>Ex 10 - Alívio mental: JSON e LocalStorage</h1>
+
+        <h2>Chegamos ao fim! Para aliviar a cabeça, vamos fazer um exercício simples.</h2>
+
+        <h2>Explique o que é um JSON e como funcionam os métodos JSON.parse e JSON.stringify.</h2>
+
+        <div>   
+            <h3>JSON:</h3>             
+            <p>JSON significa "JavaScript Object Notation", é um formato simples e leve para troca de dados entre sistemas, a maioria das linguagens atuais possuem suporte a este formato.</p>
+            
+            <h3>JSON.parse:</h3>
+            <p>Transforma uma string para objeto. Essa string precisa estar no formato chave/valor entre chaves. Exemplo {"result":true, "count":42}</p>
+            <p>Exemplo:</p>
+                <code>
+                    const json = '{"result":true, "count":42}'<br>
+                    const obj = JSON.parse(json)<br>
+                    console.log(obj.count)<br>
+                </code>
+            <p>No exemplo acima sera exibido o valor 42</p>
+            
+            <h3>JSON.stringify:</h3>
+            <p>Converte valores para uma notação JSON</p>
+            <p>Exemplo:</p>
+            <code>
+                const myArr = ['bacon', 'lettuce', 'tomatoes']<br>
+                const myArrStr = JSON.stringify(myArr)<br>
+                console.log(myArrStr)<br>
+            </code>
+            <p>No exemplo acima sera exibido o valor "["bacon","lettuce","tomatoes"]"</p>
+
+            <h4>Resultados disponiveis no console</h4>
+        </div>
+
+    </main>
+    
+</body>
+<script src="index.js"></script>
+</html>
